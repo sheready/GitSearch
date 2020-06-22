@@ -9,11 +9,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { DateAgoPipe } from './date-ago.pipe';
+import { HighlightDirective } from './highlight.directive';
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    DateAgoPipe
+    DateAgoPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
