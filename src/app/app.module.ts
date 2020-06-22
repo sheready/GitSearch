@@ -7,7 +7,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { ProfileService } from './service/profile.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { DateCountPipe } from './date-count.pipe';
+
 import { DateAgoPipe } from './date-ago.pipe';
 @NgModule({
   declarations: [

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../../service/profile.service';
+import { HttpClient} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-profile',
@@ -7,8 +9,8 @@ import { ProfileService } from '../../service/profile.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-   profile: any[];
-   repos: any[];
+   profile: any;
+   repos: any;
    username: string;
 
   constructor(private profileService: ProfileService) {
@@ -16,17 +18,16 @@ export class ProfileComponent implements OnInit {
    }
    findProfile(){
      this.profileService.updateProfile(this.username);
-     this.profileService.getProfileInfo().subscribe(profile => {
-      console.log(profile);
-      this.profile = profile;
-    });
-     this.profileService.getProfileRepos().subscribe(repos => {
-      console.log(repos);
-      this.repos = repos;
-    });
+     this.profileService.getProfileInfo().subscribe(profile => this.profile = profile);
+     this.profileService.getProfileRepos().subscribe(repos => this.repos = repos);
+
    }
 
   ngOnInit() {
+    this.profileService.updateProfile('sheready');
+    this.profileService.getProfileInfo().subscribe(profile => this.profile = profile);
+
+    this.profileService.getProfileRepos().subscribe(repos => this.repos = repos);
   }
 
 }
