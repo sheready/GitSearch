@@ -11,13 +11,15 @@ import { FormsModule } from '@angular/forms';
 import { DateAgoPipe } from './date-ago.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { AboutComponent } from './components/about/about.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     DateAgoPipe,
     HighlightDirective,
-    AboutComponent
+    AboutComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
