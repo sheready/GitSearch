@@ -3,7 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import {ProfileComponent } from './components/profile/profile.component';
 import { AboutComponent } from './components/about/about.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: 'profile', component: ProfileComponent},
+  {path: 'about', component: AboutComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
