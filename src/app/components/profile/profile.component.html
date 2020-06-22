@@ -1,0 +1,38 @@
+<form action="" class="search-form">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Enter you username" name="username" [(ngModel)]="username" (keyup)="findProfile()">
+  </div>
+</form>
+
+<div id="profile" *ngIf="profile" class="container-fluid">
+
+      <img src="{{profile.avatar_url}}" alt="profileImage" id="avatar">
+
+  <div class="container" id="bio">
+    <p><b>{{profile.name}}</b>,
+    <span *ngIf="profile.location"> <i><b>Located in {{profile.location}}</b></i></span></p>
+    <li *ngIf="profile.bio">{{profile.bio}}</li><hr>
+    <li *ngIf="profile.public_repos" class="btn btn-warning">Number of Repositories {{profile.public_repos}}</li>
+    <li class="btn btn-warning">Following-{{profile.following}} </li>
+    <li class="btn btn-warning">Followers-{{profile.followers}}</li>
+    <br><br>
+  <a href="{{profile.html_url}}" target="blank" class="btn btn-success">View Profile on github</a>
+</div>
+</div>
+<div class="container-fluid" id="repos">
+  <h3>Repositories</h3>
+  <div class="container" *ngFor="let repo of repos">
+    <p>
+      {{repo.name}}
+    </p>
+    <p>
+      {{repo.description}}
+    </p>
+    <p>
+      <a href = "{{repo.html_url}}" target="blank" class="btn btn-success">View this project on Github</a>
+    </p><hr>
+
+  </div>
+
+</div>
+
