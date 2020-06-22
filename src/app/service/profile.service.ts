@@ -15,12 +15,12 @@ export class ProfileService {
    }
    getProfileInfo(){
     // tslint:disable-next-line: max-line-length
-    return this.profileService.get('http://api.github.com/users/' + this.username + '?client_id=' + this.clientid + '&client_secret=' + this.clientsecret);
+    return this.profileService.get('https://api.github.com/users/' + this.username + '?client_id=' + this.clientid + '&client_secret=' + this.clientsecret);
 
   }
   getProfileRepos(){
     // tslint:disable-next-line: max-line-length
-    return this.profileService.get('http://api.github.com/users/' + this.username + '/repos?client_id=' + this.clientid + '&client_secret=' + this.clientsecret);
+    return this.profileService.get('https://api.github.com/users/' + this.username + '/repos?client_id=' + this.clientid + '&client_secret=' + this.clientsecret);
 
   }
   updateProfile(username: string){
