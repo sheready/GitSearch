@@ -1,0 +1,14 @@
+.jumbotron{
+  background-color: blueviolet;
+  color:white;
+  font-size: 25px;
+  height: 250px;
+}
+.container-fluid{
+  height: 400px;
+}
+#gitimg{
+  height:100%;
+  width: 100%;
+}
+

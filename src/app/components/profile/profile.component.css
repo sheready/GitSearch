@@ -14,13 +14,21 @@
    height:300px;
    display: flex;
    flex-direction:row;
-   background-color: palevioletred;
-   font-size: 20px;
+   background-color: blueviolet;
+   font-size: 25px;
+
  }
  .search-form{
    padding-top:15px;
  }
  #repos{
    background-color: plum;
-   font-size: 20px;
+   font-size: 25px;
+   color:white;
+ }
+ h3{
+   text-align: center;
+   color:black;
+   font-size: 40px;
+   text-decoration: underline;
  }
