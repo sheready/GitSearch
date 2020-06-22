@@ -1,6 +1,56 @@
-# Gitproject
 
+# Project Name
+GITHUB PROJECTS
+
+# Project Description
+This is a landing page that a user can type a github username into a form and show github profile as well as repositories on the github account of the user.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+
+## Setup Instructions
+Clone the program from Online
+
+Click on the green button to clone or download
+
+open your terminal
+
+cd into Documents/angular/Git-search
+
+Open with your favourite text editor, for vs code.. code .
+
+Run the command ng serve --open to serve your app
+
+## Technologies Used
+
+Angular
+
+HTML - For Building Mark Up Pages
+
+CSS - For styling
+
+Bootstrap - For responsiveness
+
+## Behavior Driven Development
+On Load,scroll and see the different types of repos that I been created.
+
+Click on Search Username bar to view your Repositories.
+
+To view more about the repos,click in view on githbub.
+
+Technologies Used
+
+## License
+MIT License
+
+Copyright (c) 2020
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Copyright (c) 2020
+
 
 ## Development server
 
