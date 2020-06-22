@@ -23,7 +23,7 @@
   <h3>Repositories</h3>
   <div class="container" *ngFor="let repo of repos">
     <p>
-      {{repo.name}}
+      {{repo.name|dateAgo}}
     </p>
     <p>
       {{repo.description}}
